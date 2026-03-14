@@ -1,0 +1,43 @@
+.attr-def-row {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 12px;
+}
+.attr-def-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 80px;
+  gap: 12px;
+}
+.attr-def-flags {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 12px;
+}
+.flag-check {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+.flag-check input { accent-color: var(--accent); }
+
+.category-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+}
+.category-card-icon { font-size: 1.8rem; flex-shrink: 0; }
+.category-card-info { flex: 1; }
+.category-card-name { font-family: var(--font-display); font-weight: 600; font-size: 0.95rem; }
+.category-card-desc { font-size: 0.8rem; color: var(--text-muted); margin-top: 2px; }
+.category-card-slug { font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); }
+
+@media (max-width: 768px) {
+  .attr-def-grid { grid-template-columns: 1fr 1fr; }
+}
